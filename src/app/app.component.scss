@@ -1,0 +1,74 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #0f7531;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.redButton {
+    color: #fd0001;
+    background-color: white;
+}
+
+.redButton:hover {
+    background-color: #d8fbc4;
+}
+
+.toolbar {
+    //background-color: #d8fbc4;
+    //background-color: #016334;
+    color: white;
+    background-color: #0f7531;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.content {
+    background-color: #d8fbc4;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.section-card {
+  margin: 20px 0;
+}
+
+footer {
+  background-color: #0f7531;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  //position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+  }
+}
