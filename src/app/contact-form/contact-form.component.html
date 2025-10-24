@@ -1,0 +1,54 @@
+<mat-card-content class="form">
+    <!--
+        <form (ngSubmit)="sendEmail()" #contactForm="ngForm">
+          <mat-form-field appearance="fill">
+            <mat-label>Nom</mat-label>
+            <input matInput name="name" [(ngModel)]="form.name" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input matInput name="email" [(ngModel)]="form.email" type="email" required>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Message</mat-label>
+            <textarea matInput name="message" [(ngModel)]="form.message" required></textarea>
+          </mat-form-field>
+
+          <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.form.valid">Envoyer</button>
+        </form>
+      -->
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit(contactForm)">
+        <mat-form-field appearance="outline" class="top-border">
+            <mat-label>Nom</mat-label>
+            <input matInput formControlName="name" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="mid-border">
+            <mat-label>Ville (facultatif)</mat-label>
+            <input matInput formControlName="city">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="mid-border">
+            <mat-label>Département (sur 2 chiffres)</mat-label>
+            <input matInput formControlName="zipCode" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="mid-border">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" required type="email">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="bottom-border">
+            <mat-label>Message</mat-label>
+            <textarea matInput formControlName="message" rows="5"
+                required></textarea>
+        </mat-form-field>
+
+        <button mat-raised-button style="color:#fd0001"
+            type="submit">Envoyer</button>
+    </form>
+
+</mat-card-content>

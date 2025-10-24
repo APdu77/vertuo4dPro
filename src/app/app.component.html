@@ -2,29 +2,45 @@
   <span>Vertuo 4D Pro</span>
   <span class="spacer"></span>
 
-  <button mat-mini-fab [matMenuTriggerFor]="menu" class="redButton">
+  <div class="desktop-menu" >
+      <a mat-button href="#services">
+        <span>Services</span>
+      </a>
+    
+      <a mat-button href="#about">
+        <span>A propos</span>
+      </a>
+    
+      <a mat-button href="#contact">
+        <span>Contact</span>
+      </a>
+  </div>
+      
+   
+<div class="mobile-menu">
+<button mat-mini-fab [matMenuTriggerFor]="menu" class="menuButton">
     <mat-icon>menu</mat-icon>
   </button>
   <mat-menu #menu="matMenu" xPosition="before">
-    <button mat-menu-item>
-      <a href="#services">
+    
+      <a mat-menu-item href="#services">
         <mat-icon style="color:#fd0001">construction</mat-icon>
         <span>Services</span>
       </a>
-    </button>
-    <button mat-menu-item>
-      <a href="#about">
+    
+    
+      <a mat-menu-item href="#about">
         <mat-icon style="color:#fd0001">info</mat-icon>
-        <span>A propos Vertuo</span>
+        <span>A propos de Vertuo</span>
       </a>
-    </button>
-    <button mat-menu-item>
-      <a href="#contact">
+      <a mat-menu-item href="#contact">
         <mat-icon style="color:#fd0001">contact_page</mat-icon>
         <span>Contact</span>
       </a>
-    </button>
   </mat-menu>
+</div>
+  
+
 </mat-toolbar>
 
 <div class="content">
@@ -32,27 +48,16 @@
   <section id="services">
     <mat-card class="section-card">
       <mat-card-header>
-        <mat-card-title>Nos Services</mat-card-title>
+        <mat-card-title>Nos Prestations</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p>Nous offrons des solutions innovantes dans le domaine de la transformation numérique.</p>
-        <ul>
-          <li>Consultation et stratégie numérique</li>
-          <li>Développement de logiciels sur mesure</li>
-          <li>Gestion de projet IT 4D</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <p>Voyez la vie en 4D !</p>
 
-        </ul>
+
+<app-card-reveal></app-card-reveal>
+
+
+
       </mat-card-content>
     </mat-card>
   </section>
@@ -61,10 +66,17 @@
   <section id="about">
     <mat-card class="section-card">
       <mat-card-header>
-        <mat-card-title>À propos de Vertuo 4D Pro</mat-card-title>
+        <mat-card-title>À propos de Nous</mat-card-title>
       </mat-card-header>
       <mat-card-content>
-        <p>Vertuo 4D Pro est une entreprise de pointe spécialisée dans les solutions 4D pour la gestion d'entreprise. Nous aidons nos clients à naviguer dans le monde numérique avec des solutions personnalisées et durables.</p>
+        <p>Vertuo 4D Pro est une société spécialisée dans la dératisation, la désinsectisation, la désinfection et le dépigeonnage ; nous pouvons aussi intervenir ponctuellement contre tout autre type de nuisibles.<br/>
+Nous intervenons sur toute l'Île-de-France ainsi que ses départements limitrophes.<br/><br/>
+Nous utilisons des procédés performants tout en veillant à ne pas immobiliser vos locaux/surfaces plus que nécessaire.<br/>
+Les rats, souris, cafards, fourmis, guêpes, moustiques et pigeons n'ont qu'à bien se tenir !!<br/><br/>
+Pour un travail de qualité, hygiénique et durable, nous faisons systématiquement suivre nos prestations anti-nuisibles par une prestation de désinfection, prestation indispensable au bon fonctionnement de vos ERP/ERT* en conformité avec les normes officielles.<br/>
+Nous intervenons également chez les particuliers.<br/><br/>
+*ERP/ERT : Etablissement Recevant du Public/des Travailleurs
+</p>
       </mat-card-content>
     </mat-card>
   </section>
@@ -75,26 +87,7 @@
       <mat-card-header>
         <mat-card-title>Contactez-nous</mat-card-title>
       </mat-card-header>
-      <mat-card-content>
-        <form (ngSubmit)="sendEmail()" #contactForm="ngForm">
-          <mat-form-field appearance="fill">
-            <mat-label>Nom</mat-label>
-            <input matInput name="name" [(ngModel)]="form.name" required>
-          </mat-form-field>
-
-          <mat-form-field appearance="fill">
-            <mat-label>Email</mat-label>
-            <input matInput name="email" [(ngModel)]="form.email" type="email" required>
-          </mat-form-field>
-
-          <mat-form-field appearance="fill">
-            <mat-label>Message</mat-label>
-            <textarea matInput name="message" [(ngModel)]="form.message" required></textarea>
-          </mat-form-field>
-
-          <button mat-raised-button color="primary" type="submit" [disabled]="!contactForm.form.valid">Envoyer</button>
-        </form>
-      </mat-card-content>
+      <app-contact-form></app-contact-form>
     </mat-card>
   </section>
 </div>
