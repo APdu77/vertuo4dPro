@@ -1,0 +1,44 @@
+<mat-toolbar class="toolbar">
+  <span>Vertuo 4D Pro</span>
+  <span class="spacer"></span>
+
+  <div class="desktop-menu" >
+      <a mat-button href="#services">
+        <span>Services</span>
+      </a>
+    
+      <a mat-button href="#about">
+        <span>A propos</span>
+      </a>
+    
+      <a mat-button href="#contact">
+        <span>Contact</span>
+      </a>
+  </div>
+      
+   
+<div class="mobile-menu">
+<button mat-mini-fab [matMenuTriggerFor]="menu" class="menuButton">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" xPosition="before">
+    
+      <a mat-menu-item href="#services">
+        <mat-icon style="color:#fd0001">construction</mat-icon>
+        <span>Services</span>
+      </a>
+    
+    
+      <a mat-menu-item href="#about">
+        <mat-icon style="color:#fd0001">info</mat-icon>
+        <span>A propos de Vertuo</span>
+      </a>
+      <a mat-menu-item href="#contact">
+        <mat-icon style="color:#fd0001">contact_page</mat-icon>
+        <span>Contact</span>
+      </a>
+  </mat-menu>
+</div>
+  
+
+</mat-toolbar>

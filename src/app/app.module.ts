@@ -14,11 +14,17 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatRippleModule } from '@angular/material/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CardRevealComponent } from './card-reveal/card-reveal.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { FooterComponent } from './footer/footer.component';
+import { LegalDialogComponent } from './legal-dialog/legal-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { CardDialogComponent } from './card-dialog/card-dialog.component';
+import { CardsComponent } from './cards/cards.component';
+import { CallButtonComponent } from './call-button/call-button.component' ;
 
 @NgModule({
-  declarations: [AppComponent, CardRevealComponent, ContactFormComponent],
+  declarations: [AppComponent, ContactFormComponent, FooterComponent, LegalDialogComponent, ToolbarComponent, CardDialogComponent, CardsComponent, CallButtonComponent],
   imports: [
     FormsModule,
     ReactiveFormsModule,
@@ -33,6 +39,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     MatMenuModule,
     MatRippleModule,
     BrowserAnimationsModule,
+    MatDialogModule,
   ],
   providers: [MatSnackBar],
   bootstrap: [AppComponent]

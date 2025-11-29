@@ -1,49 +1,37 @@
-<mat-toolbar class="toolbar">
-  <span>Vertuo 4D Pro</span>
-  <span class="spacer"></span>
-
-  <div class="desktop-menu" >
-      <a mat-button href="#services">
-        <span>Services</span>
-      </a>
-    
-      <a mat-button href="#about">
-        <span>A propos</span>
-      </a>
-    
-      <a mat-button href="#contact">
-        <span>Contact</span>
-      </a>
-  </div>
-      
-   
-<div class="mobile-menu">
-<button mat-mini-fab [matMenuTriggerFor]="menu" class="menuButton">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu" xPosition="before">
-    
-      <a mat-menu-item href="#services">
-        <mat-icon style="color:#fd0001">construction</mat-icon>
-        <span>Services</span>
-      </a>
-    
-    
-      <a mat-menu-item href="#about">
-        <mat-icon style="color:#fd0001">info</mat-icon>
-        <span>A propos de Vertuo</span>
-      </a>
-      <a mat-menu-item href="#contact">
-        <mat-icon style="color:#fd0001">contact_page</mat-icon>
-        <span>Contact</span>
-      </a>
-  </mat-menu>
-</div>
-  
-
-</mat-toolbar>
+<app-toolbar></app-toolbar>
 
 <div class="content">
+
+  <!-- Section À propos -->
+  <section id="about">
+    <mat-card class="section-card">
+      <mat-card-header>
+        <mat-card-title>À propos de Nous</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>Vertuo 4D Pro est une société spécialisée dans la dératisation, la
+          désinsectisation, la désinfection et le dépigeonnage ; nous pouvons
+          aussi intervenir ponctuellement contre tout autre type de
+          nuisibles.<br />
+          Nous intervenons sur toute l'Île-de-France ainsi que ses départements
+          limitrophes.<br /><br />
+          Nous utilisons des protocoles stricts et performants tout en veillant
+          à ne pas immobiliser vos espaces plus que nécessaire.<br />
+          Les rats, souris, cafards, fourmis, guêpes, moustiques et pigeons
+          n'ont qu'à bien se tenir !!<br /><br />
+          Pour un travail de qualité, hygiénique et durable, nous faisons
+          systématiquement suivre nos prestations anti-nuisibles par une
+          prestation de désinfection, prestation indispensable a l'otention d'un
+          espace sain dans vos habitations ou vos ERP/ERT*, en conformité avec
+          les normes actuellement en vigueur.<br /><br />
+          Nous proposons des interventions ponctuelles ou périodiques ou en
+          abonnement.<br /><br /><br />
+          *ERP/ERT : Etablissement Recevant du Public/des Travailleurs
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </section>
+
   <!-- Section Services -->
   <section id="services">
     <mat-card class="section-card">
@@ -53,30 +41,9 @@
       <mat-card-content>
         <p>Voyez la vie en 4D !</p>
 
+        <!--<app-card-reveal></app-card-reveal> -->
+        <app-cards></app-cards>
 
-<app-card-reveal></app-card-reveal>
-
-
-
-      </mat-card-content>
-    </mat-card>
-  </section>
-
-  <!-- Section À propos -->
-  <section id="about">
-    <mat-card class="section-card">
-      <mat-card-header>
-        <mat-card-title>À propos de Nous</mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
-        <p>Vertuo 4D Pro est une société spécialisée dans la dératisation, la désinsectisation, la désinfection et le dépigeonnage ; nous pouvons aussi intervenir ponctuellement contre tout autre type de nuisibles.<br/>
-Nous intervenons sur toute l'Île-de-France ainsi que ses départements limitrophes.<br/><br/>
-Nous utilisons des procédés performants tout en veillant à ne pas immobiliser vos locaux/surfaces plus que nécessaire.<br/>
-Les rats, souris, cafards, fourmis, guêpes, moustiques et pigeons n'ont qu'à bien se tenir !!<br/><br/>
-Pour un travail de qualité, hygiénique et durable, nous faisons systématiquement suivre nos prestations anti-nuisibles par une prestation de désinfection, prestation indispensable au bon fonctionnement de vos ERP/ERT* en conformité avec les normes officielles.<br/>
-Nous intervenons également chez les particuliers.<br/><br/>
-*ERP/ERT : Etablissement Recevant du Public/des Travailleurs
-</p>
       </mat-card-content>
     </mat-card>
   </section>
@@ -92,6 +59,13 @@ Nous intervenons également chez les particuliers.<br/><br/>
   </section>
 </div>
 
+<!--
 <footer class="footer">
   <p>&copy; 2025 Vertuo 4D Pro | Tous droits réservés</p>
+  <p>RCS MELUN B 750 668 238 </p>
 </footer>
+-->
+
+<app-call-button></app-call-button>
+
+<app-footer></app-footer>

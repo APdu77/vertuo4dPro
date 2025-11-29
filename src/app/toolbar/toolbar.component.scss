@@ -1,0 +1,76 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+.toolbar {
+    //background-color: #d8fbc4;
+    //background-color: #016334;
+    color: white;
+    background-color: #0f7531;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+/* Desktop : menu visible par défaut */
+.desktop-menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Mobile : menu caché par défaut */
+.mobile-menu {
+  display: none;
+}
+
+/* Responsive 768 px*/
+@media (max-width: 48rem) {
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+/*bouton menu au centre sous 480px*/
+@media screen and (max-width: 30rem) {
+  .toolbar {
+    flex-direction: column;
+  }
+}
+
+span {
+    color: #fd0001;
+    font-family: 'roboto', sans-serif;
+    
+}
+
+a {
+    border: #0f7531 dashed;
+    border-radius: 0.5rem;
+    background-color: #d8fbc4;
+}
+
+a:hover {
+    border: #d8fbc4 dashed;
+    border-radius: 1rem;
+    background-color: #0f7531;
+}
+
+button {
+    color: #fd0001;
+    background-color: white;
+    border: 2px dashed #0f7531;
+}
+
+button:hover {
+    background-color: #d8fbc4;
+}
+
+
+.spacer {
+  flex: 1;
+}

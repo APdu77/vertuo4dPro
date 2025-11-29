@@ -8,83 +8,46 @@ html, body {
 
 
 
-/* Desktop menu visible par défaut */
-.desktop-menu {
-  display: flex;
-  gap: 0.5rem;
-}
 
-/* Mobile menu caché par défaut */
-.mobile-menu {
-  display: none;
-}
-
-/* Responsive 768 px*/
-@media (max-width: 48rem) {
-  .desktop-menu {
-    display: none;
-  }
-  .mobile-menu {
-    display: block;
-  }
-}
-/*bouton menu au centre sous 480px*/
-@media screen and (max-width: 30rem) {
-  .toolbar {
-    flex-direction: column;
-  }
-}
-
-.menuButton {
-    color: #fd0001;
-    background-color: white;
-    border: 2px dashed #0f7531;
-}
-
-.menuButton:hover {
-    background-color: #d8fbc4;
-}
-
-.submitButton {
-    color: #fd0001;
-    background-color: white;
-    border: 2px solid #0f7531;
-}
-
-.submitButton:hover {
-    background-color: #d8fbc4;
-}
-
-.toolbar {
-    //background-color: #d8fbc4;
-    //background-color: #016334;
-    color: white;
-    background-color: #0f7531;
-    display: flex;
-    position: fixed;
-    z-index: 1000;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-}
-
-.spacer {
-  flex: 1;
-}
 
 .content {
-    background-color: #d8fbc4;
+  margin-top: 5px;
   padding: 50px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
+
+
 section {
+      background-color: #d8fbc4;
+  padding: 20px;
   margin-bottom: 50px;
+  border-radius: 0.5rem;
+  //display :flex;
+    //align-items: center;
+    width: 35%;
+}
+
+@media (max-width: 1280px) {
+  section {
+    width: 50%; /* Pleine largeur sur petit écran */
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    width: 100%; /* Pleine largeur sur petit écran */
+  }
 }
 
 .section-card {
-  margin: 20px 0;
+  margin: 5px 0;
+      //background-color: #d8fbc4;
+
+  
+  
   
 }
 
@@ -111,7 +74,4 @@ app-card-reveal {
     flex-wrap: wrap; //Pour aller à la ligne si l’espace manque
 }
 
-app-contact-form {
-
-}
 

@@ -13,8 +13,19 @@ form {
 mat-form-field {
   //flex-direction: column;
   width: 50%;
-  
   //border: solid;
+}
+
+@media (max-width: 1280px) {
+  mat-form-field {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  mat-form-field {
+    width: 100%; /* Pleine largeur sur petit écran */
+  }
 }
 
 mat-form-field {
@@ -45,7 +56,7 @@ border-top-left-radius: 8px;
 }
 
 button {
-    color: #fd0001;
+    //color: #fd0001;
     background-color: white;
     border: 2px solid #0f7531;
 }

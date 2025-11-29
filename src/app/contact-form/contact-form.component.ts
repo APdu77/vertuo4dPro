@@ -23,10 +23,10 @@ contactForm!: FormGroup;
   onSubmit(form:FormGroup): void {
     if (form.valid) {
       emailjs.send(
-        'your_service_id',
-        'your_template_id',
+        'vertuo_service',
+        'vertuo_template',
         form.value,
-        'your_public_key'
+        'hSJjc4PLU1l62vsLy'
       ).then(() => {
         alert('Message envoyé avec succès !');
         form.reset();

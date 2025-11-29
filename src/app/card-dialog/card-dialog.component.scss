@@ -1,0 +1,62 @@
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f4f8;
+  border-radius: 16px;
+  padding: 24px;
+  width: 90%;
+  max-height: 90vh;        /* ✅ limite la hauteur à la fenêtre */
+  overflow-y: auto;        /* ✅ active le défilement vertical */
+  overflow-x: hidden;
+  animation: fadeZoomIn 0.35s ease;
+}
+
+/* Image */
+.dialog-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* Texte */
+.dialog-text {
+  text-align: left;
+  width: 100%;
+  color: #333;
+}
+
+.dialog-text h2 {
+  margin-top: 0;
+  color: #222;
+}
+
+.dialog-text p {
+  margin-top: 8px;
+  color: #444;
+  white-space: pre-line; /* ✅ conserve les sauts de ligne */
+  line-height: 1.5;
+}
+
+/* Bouton */
+.dialog-actions {
+  margin-top: 20px;
+}
+
+/* ✨ Animation */
+@keyframes fadeZoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
