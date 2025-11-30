@@ -34,7 +34,7 @@ export class LegalDialogComponent {
         this.title = 'Politique de confidentialité';
         this.content = `
           Votre vie privée est importante pour nous.
-Cette politique de confidentialité décrit la manière dont [Nom du site] collecte, utilise et protège les informations personnelles des visiteurs de son site vitrine [URL du site].
+Cette politique de confidentialité décrit la manière dont vertuo4dpro.fr collecte, utilise et protège les informations personnelles des visiteurs de son site vitrine https://www.vertuo4dpro.fr .
 
 1. Données collectées
 
