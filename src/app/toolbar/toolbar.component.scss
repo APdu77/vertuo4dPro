@@ -32,13 +32,6 @@
   }
 }
 
-/*bouton menu au centre sous 480px*/
-@media screen and (max-width: 30rem) {
-  .toolbar {
-    flex-direction: column;
-  }
-}
-
 span {
     color: #fd0001;
     font-size: smaller;

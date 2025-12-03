@@ -21,10 +21,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { CardDialogComponent } from './card-dialog/card-dialog.component';
 import { CardsComponent } from './cards/cards.component';
-import { CallButtonComponent } from './call-button/call-button.component' ;
+import { CallButtonComponent } from './call-button/call-button.component';
+import { BannerComponent } from './banner/banner.component' ;
 
 @NgModule({
-  declarations: [AppComponent, ContactFormComponent, FooterComponent, LegalDialogComponent, ToolbarComponent, CardDialogComponent, CardsComponent, CallButtonComponent],
+  declarations: [AppComponent, ContactFormComponent, FooterComponent, LegalDialogComponent, ToolbarComponent, CardDialogComponent, CardsComponent, CallButtonComponent, BannerComponent],
   imports: [
     FormsModule,
     ReactiveFormsModule,

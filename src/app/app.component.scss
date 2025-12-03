@@ -22,6 +22,20 @@ section {
   //display :flex;
   //align-items: center;
   width: 35%;
+  text-align: justify;
+}
+
+.green {
+  color: #0f7531;
+}
+
+.red {
+  color: #fd0001;
+  font-style: italic;
+}
+
+.small {
+  font-size: xx-small;
 }
 
 @media (max-width: 1280px) {

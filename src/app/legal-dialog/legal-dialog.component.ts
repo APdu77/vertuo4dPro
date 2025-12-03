@@ -26,7 +26,7 @@ export class LegalDialogComponent {
           2025 Vertuo 4D Pro — EI — RCS Melun 750 668 238
           Siège social : 10 rue de l'Etang, 77240 Vert-Saint-Denis
           Directeur de la publication : M. Hadiouche
-          Hébergeur : OVH, 2 rue Kellermann, 59100 Roubaix
+          Hébergeur : GitHub Pages
         `;
         break;
 
@@ -87,7 +87,7 @@ Nous mettons en œuvre des mesures raisonnables pour protéger vos données cont
 7. Contact
 
 Vertuo 4D Pro  
-Tél : 07 44 13 11 97  
+Tél : +33 6 65 57 35 01
 Email : vertuo4dpro@gmail.com
         `;
         break;

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class CallButtonComponent {
 
   callNumber() {
-  window.location.href = 'tel:+33744131197';
+  window.location.href = 'tel:+33665573501';
 }
 
 

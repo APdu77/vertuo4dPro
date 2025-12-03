@@ -1,0 +1,14 @@
+.banner {
+  padding: 0;                // enlève l'espace interne
+  height: auto !important;   // permet à la toolbar de s'ajuster à l'image
+  min-height: 0 !important;  // évite le minimum imposé par Material
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px;
+}
